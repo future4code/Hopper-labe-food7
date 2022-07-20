@@ -1,3 +1,7 @@
+export const goToSplash = (navigate) => {
+    navigate("/screenpage");
+};
+
 export const goToLogin = (navigate) => {
     navigate("/");
 };
