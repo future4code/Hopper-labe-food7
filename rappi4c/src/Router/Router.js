@@ -7,6 +7,7 @@ import Home from "../Pages/Home/Home"
 import LoginPage from "../Pages/LoginPage/LoginPage";
 import Perfil from "../Pages/Perfil/Perfil";
 import EditPerfil from "../Pages/EditPerfil/EditPerfil";
+import SplachScren from "../Pages/SplashScreen/SplashScreen"
 
 const Router = () => {
 
@@ -15,6 +16,8 @@ const Router = () => {
         <Routes>
             <Route />
             
+                <Route path="/screenpage" element={<SplachScren/>}/>
+                
                 <Route path="/" element={<LoginPage />}/>
 
                 <Route path="/cadastro" element={<Cadastro />}/>
