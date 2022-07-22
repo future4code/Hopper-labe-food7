@@ -1,6 +1,9 @@
 import React from "react";
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
+import {Button} from './styled'
+import { Container } from "@mui/system";
+
 
 const Cadastro = () => {
    
@@ -34,15 +37,16 @@ const Cadastro = () => {
           <input onChange={onChangeCpf} placeholder='000.000.000-00' type=""></input>
           <input onChange={onChangeSenha} placeholder='Mínimo 6 caracteres'></input>
           <input onChange={onChangeSenhaConfirm} placeholder='Corfirme a senha anterior'></input> */}
-          
+          <Container>
           <TextField 
           onChange={onChangeNome}
           required
           id="outlined-required"
           label="Nome"
           placeholder="Nome e sobrenome"
-          /><br/>
-
+          />
+          </Container>
+          <Container >
           <TextField 
           onChange={onChangeEmail}
           required
@@ -50,8 +54,9 @@ const Cadastro = () => {
           label="email"
           placeholder="'email@email.com"
           type="email"
-          /><br/>
-
+          />
+          </Container>
+          <Container >
           <TextField 
           onChange={onChangeCpf}
           required
@@ -60,8 +65,9 @@ const Cadastro = () => {
           placeholder="'000.000.000-00"
           type="text"
           
-          /><br/>
-
+          />
+          </Container>
+          <Container >
           <TextField 
           onChange={onChangeSenha}
           required
@@ -69,8 +75,9 @@ const Cadastro = () => {
           label="Senha"
           placeholder="Mínimo 6 caracteres"
           type="password"
-          /><br/>
-
+          />
+          </Container>
+          <Container >
           <TextField 
           onChange={onChangeSenhaConfirm}
           required
@@ -78,10 +85,10 @@ const Cadastro = () => {
           label="Senha"
           placeholder="Confirme a senha anterior"
           type="password"
-          /><br/>
+          />
+          </Container>
 
-
-          <button>Criar</button>
+          <Button>Criar</Button>
       </>
     );
   };
