@@ -33,7 +33,7 @@ const Router = () => {
                 <Route path="*" element={<ErrorPage />}/>
 
         </Routes>    
-    </BrowserRouter>
+        </BrowserRouter>
         
     )
 }
