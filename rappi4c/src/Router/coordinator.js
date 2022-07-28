@@ -10,6 +10,10 @@ export const goToSignUp = (navigate) => {
     navigate("/cadastro");
 };
 
+export const goToEndereco = (navigate) => {
+    navigate("/endereco");
+};
+
 export const goToHome = (navigate) => {
     navigate("/feed");
 };
