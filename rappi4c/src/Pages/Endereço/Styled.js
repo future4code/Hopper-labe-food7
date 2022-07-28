@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const Cadast = styled.div`
+export const End = styled.div`
   width: 360px;
   height: 640px;
   padding: 0 0 16px;
@@ -56,7 +56,7 @@ export const Conainer = styled.div`
   width: 360px;
   height: 72px;
   margin: 0px 0px 0 -1px;
-  padding: 0px 12px 0px;
+  padding: 0px 16px 0px;
 
 `
 
@@ -69,5 +69,5 @@ export const ButtonEnviar = styled.button`
   width: 100%;
   height: 42px;
   border-radius: 2px;
-  background-color: var(--color-Dark_peach);
-  `
+  size:16px;
+  background-color: var(--color-Dark_peach);`
