@@ -1,11 +1,13 @@
 import React from "react";
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
-import {Button} from './styled'
-import { Container } from "@mui/system";
+import { Cadast, Bar,IconNavBack, ImgLogo, Text, Title,Conainer, ContainerInput, ContainerLogo,ButtonEnviar,BackIcon } from "./styled";
+import IconBack from '../../Assets/back.png'
+import Logo from '../../Assets/logo-future-eats-invert.png'
+import Passoword from "./Passoword";
 
 
-const Cadastro = () => {
+ const Cadastro = () => {
    
   
   const onChangeNome = (event) => {
@@ -29,68 +31,62 @@ const Cadastro = () => {
   }
   
   return (
-      <>
-          <img></img>
-          <h3>cadastro</h3>
-          {/* <input onChange={onChangeNome} placeholder='Nome e sobrenome' type="text"></input>
-          <input onChange={onChangeEmail} placeholder='email@email.com' type="email"></input>
-          <input onChange={onChangeCpf} placeholder='000.000.000-00' type=""></input>
-          <input onChange={onChangeSenha} placeholder='Mínimo 6 caracteres'></input>
-          <input onChange={onChangeSenhaConfirm} placeholder='Corfirme a senha anterior'></input> */}
-          <Container>
-          <TextField 
-          onChange={onChangeNome}
-          required
-          id="outlined-required"
-          label="Nome"
-          placeholder="Nome e sobrenome"
-          />
-          </Container>
-          <Container >
-          <TextField 
-          onChange={onChangeEmail}
-          required
-          id="outlined-required"
-          label="email"
-          placeholder="'email@email.com"
-          type="email"
-          />
-          </Container>
-          <Container >
-          <TextField 
-          onChange={onChangeCpf}
-          required
-          id="outlined-required"
-          label="CPF"
-          placeholder="'000.000.000-00"
-          type="text"
-          
-          />
-          </Container>
-          <Container >
-          <TextField 
-          onChange={onChangeSenha}
-          required
-          id="outlined-required"
-          label="Senha"
-          placeholder="Mínimo 6 caracteres"
-          type="password"
-          />
-          </Container>
-          <Container >
-          <TextField 
-          onChange={onChangeSenhaConfirm}
-          required
-          id="outlined-required"
-          label="Senha"
-          placeholder="Confirme a senha anterior"
-          type="password"
-          />
-          </Container>
-
-          <Button>Criar</Button>
-      </>
+    <Cadast>
+      <Bar>
+        <IconNavBack>
+          <BackIcon><img src={IconBack} alt=""/></BackIcon>
+        </IconNavBack>
+      </Bar>
+      <ContainerLogo>
+        <ImgLogo src={Logo} alt="" />
+      </ContainerLogo>  
+      <Title>  
+          <Text>Cadastrar</Text>
+      </Title>
+    <Conainer> 
+    <ContainerInput>  
+      <TextField 
+        fullWidth
+        onChange={onChangeNome}
+        required
+        id="outlined-required"
+        label="Nome"
+        placeholder="Nome e sobrenome"
+      />
+    </ContainerInput>
+    <ContainerInput>
+      <TextField
+        fullWidth 
+        onChange={onChangeEmail}
+        required
+        id="outlined-required"
+        label="Email"
+        placeholder="'email@email.com"
+        type="email"
+      />
+    </ContainerInput>
+    <ContainerInput>
+      <TextField
+        fullWidth  
+        onChange={onChangeCpf}
+        required
+        id="outlined-required"
+        label="CPF"
+        placeholder="'000.000.000-00"
+        type="text"
+      />
+      </ContainerInput>
+      <ContainerInput>
+        <Passoword/>  
+      </ContainerInput>
+        <ButtonEnviar>Criar</ButtonEnviar>     
+      </Conainer>
+      </Cadast>
     );
   };
 
   export default Cadastro;
+
+     
+
+         
