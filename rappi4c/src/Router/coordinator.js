@@ -29,3 +29,6 @@ export const goToEditPerfil = (navigate) => {
 export const goToError = (navigate) => {
     navigate("*");
 };
+
+
+
