@@ -1,11 +1,11 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 //import * as React from 'react';
-import Box from '@mui/material/Box'
-import Switch from '@mui/material/Switch'
-import Paper from '@mui/material/Paper'
-import Fade from '@mui/material/Fade'
-import FormControlLabel from '@mui/material/FormControlLabel'
-import { Theme } from '@mui/material/styles'
+// import Box from '@mui/material/Box'
+// import Switch from '@mui/material/Switch'
+// import Paper from '@mui/material/Paper'
+// import Fade from '@mui/material/Fade'
+// import FormControlLabel from '@mui/material/FormControlLabel'
+// import { Theme } from '@mui/material/styles'
 import { Body } from './styled'
 import logo from '../../Assets/logo-future-eats.png'
 
@@ -49,19 +49,19 @@ export default SplashScreen
 
 // return (
 
-{
+//{
   /* <Box sx={{ height: 180 }}>
       {/* <FormControlLabel
         control={<Switch checked={checked} onChange={handleChange} />}
         label="Show"
       /> */
-}
-{
+//}
+//{
   /* <Box sx={{ display: 'flex' }}>
         <Fade in={checked}>{icon}</Fade>
       </Box>
 //     // </Box> */
-}
+//}
 
 //   );
 // }
