@@ -5,10 +5,11 @@ import { Cadast, Bar,IconNavBack, ImgLogo, Text, Title,Conainer, ContainerInput,
 import IconBack from '../../Assets/back.png'
 import Logo from '../../Assets/logo-future-eats-invert.png'
 import Passoword from "./Passoword";
+import useUnprotectedPage from "../../hooks/useUnprotectedPage";
 
 
  const Cadastro = () => {
-   
+   useUnprotectedPage()
   
   const onChangeNome = (event) => {
 
@@ -56,26 +57,26 @@ import Passoword from "./Passoword";
     </ContainerInput>
     <ContainerInput>
       <TextField
-        fullWidth 
-        onChange={onChangeEmail}
-        required
-        id="outlined-required"
-        label="Email"
-        placeholder="'email@email.com"
-        type="email"
-      />
-    </ContainerInput>
-    <ContainerInput>
-      <TextField
         fullWidth  
         onChange={onChangeCpf}
         required
         id="outlined-required"
         label="CPF"
-        placeholder="'000.000.000-00"
+        placeholder="000.000.000-00"
         type="text"
       />
       </ContainerInput>
+    <ContainerInput>
+      <TextField
+        fullWidth 
+        onChange={onChangeEmail}
+        required
+        id="outlined-required"
+        label="E-mail"
+        placeholder="email@email.com"
+        type="email"
+      />
+    </ContainerInput>
       <ContainerInput>
         <Passoword/>  
       </ContainerInput>
