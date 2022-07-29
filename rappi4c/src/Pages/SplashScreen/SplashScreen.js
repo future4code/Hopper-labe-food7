@@ -8,8 +8,10 @@ import FormControlLabel from '@mui/material/FormControlLabel'
 import { Theme } from '@mui/material/styles'
 import { Body } from './styled'
 import logo from '../../Assets/logo-future-eats.png'
+import useUnprotectedPage from "../../hooks/useUnprotectedPage"
 
 const SplashScreen = () => {
+      useUnprotectedPage()
   return (
     <Body>
       <>

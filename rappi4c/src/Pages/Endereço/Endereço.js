@@ -2,9 +2,11 @@ import React from "react";
 import TextField from '@mui/material/TextField';
 import { End, Bar,IconNavBack, Text, Title,Conainer, ContainerInput, ContainerLogo,ButtonEnviar,BackIcon } from "./Styled";
 import IconBack from '../../Assets/back.png'
+import useProtectedPage from "../../hooks/useProtectedPage"
 
 
     const Endereço = () => {
+      useProtectedPage()
 
         const onChangeLogradouro = (event) => {
 
